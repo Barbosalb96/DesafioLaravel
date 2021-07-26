@@ -31,11 +31,9 @@ class HomeController extends Controller
     }
 
 
-    public function detalhe($id)
-    {
-        $carro = Carro::query()->find($id);
-        return view('pages.visualizar', ['carro' => $carro]);
-    }
+   
+    
+    
 
     public function getCarros(Request $request)
     {
